@@ -1,0 +1,647 @@
+/*CSS Reset -----------------------------------------------------------------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	background-color: #000d1a;
+	
+	 background-color: #000d1a; /* For browsers that do not support gradients */
+  background-image: linear-gradient(#000d1a 20%, #9a004c 45%, #ADD8E6 93% ); /* Standard syntax (must be last) */
+}
+
+/* End of Css Reset ----------------------------------------------------------------------------------------------------/
+
+/*Navigation bar -----------------------------------*/
+ul {
+   position: absolute;
+   left: 14%;
+   margin-top: 2em;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: inline-block;
+    color: white;
+	font-family: 'Raleway', sans-serif;
+	font-size: 250%;
+	position: relative;
+    text-decoration: none;
+	margin: 0 0 0 1em;
+}
+
+li a:before {
+	position: absolute;
+	width: 0%;
+	overflow: hidden;
+	transition: 2.5s;
+}
+
+.home {
+	margin: 0 0 0 0;
+}
+
+.home:before {
+	content: 'Home';
+	color: #FFD802;
+}
+
+.about:before {
+	content: 'AboutMe';
+	color: #FFD802;
+}
+
+.res:before {
+	content: 'Resume';
+	color: #FFD802;
+}
+
+.port:before {
+	content: 'Portfolio';
+	color: #FFD802;
+}
+
+.cont:before {
+	content: 'Contact';
+	color: #FFD802;
+}
+
+li a:hover:before {
+	width: 100%;
+}
+
+
+.wave {
+    content: '';
+    width: 90%;
+	height: 5px;
+    display: block;
+    border-bottom: 3px solid white;
+    border-radius: 20%;
+	left: 5%;
+	right: 5%;
+	margin-top: 5em;
+}
+
+/*Back to the top button --------------------------------------------------------------------------------- */
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #FFD802; /* Set a background color */
+  color: black; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 20%; /* Rounded corners */
+  font-size: 15px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #888; /* Add a dark-grey background on hover */
+}
+
+/* My Name!!! --------------------------------------------------------------------------------- */
+h1 {
+	color: white;
+	font-size: 900%;
+	margin: 2% 10% 0;
+	font-family: 'Courgette', cursive;
+}
+
+h2 {
+	color: white;
+	font-size: 450%;
+	margin: 2% 0 0 35%;
+	font-family: 'Bitter', serif;
+}
+
+#introWords {
+	margin: 2% 0 3% 40%;
+}
+
+#thanks {
+	margin: 5% 0 7% 20%;
+	font-family: 'Courgette', cursive;
+	display: block;
+}
+
+h3 {
+	color: white;
+	font-family: 'Bitter', serif;
+	font-size: 300%;
+}
+
+h4 {
+	color: white;
+	font-size: 200%;
+	font-family: 'Bitter', sans-serif;
+}
+
+h5 {
+	color: white;
+	font-family: 'Raleway', sans-serif;
+	font-size: 155%;
+	margin-top: .5em;
+}
+
+h6 {
+	font-family: 'Bitter', sans-serif;
+	margin-bottom: .25em;
+}
+
+p {
+	color: white;
+	font-size: 115%;
+	font-family: 'Raleway', sans-serif;
+}
+
+/*----------------------------------- About Me*/
+#aboutText {
+width: 98%
+}
+
+#allAboutMe {
+	width: 90%;
+	padding: 1%;
+	margin: 0 5% 1em 5%;
+}
+
+#allAboutMeRow:after {
+	content: "";
+    display: table;
+    clear: both;
+}
+
+#bio{ 
+	float: left;
+    width: 30%;
+    padding: 10px;
+}
+
+#face {
+	float: left;
+    width: 22%;
+    padding: 10px;
+}
+
+#hannah {
+	position: relative;
+	width: 85%;
+	 border-radius: 50%;
+	 border: solid .75em #FFD802;
+	 z-index: 5;
+}
+
+#shortFacts {
+	float: left;
+    width: 35%;
+    padding: 10px;
+	margin-bottom: 1%;
+}
+
+#longFact {
+	width: 98%;
+	font-size: 100%;
+	margin-bottom: 1em;
+}
+
+/*----------------------------------- Space Bubbles*/
+#spaceman {
+	width: 16%;
+	float: left;
+	margin-left: 4%;
+	margin-top: 5em;
+	margin-right: -3%;
+	position: relative;
+	 -webkit-animation: spaceBoi 3s infinite; /* Safari 4.0 - 8.0 */
+  animation: bubble1Move 4s infinite;
+	}
+	
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes spaceBoi {
+  0%   {top: 0px;}
+  50%  {top: 15px;}
+  100%  {top: 0px}
+}
+
+/* Standard syntax */
+@keyframes spaceBoi {
+  0%   {top: 0px;}
+  50%  {top: 15px;}
+  100%  {top: 0px}
+}
+
+.bubble1 {
+	position: relative;
+	max-width: 8%;
+	float: left;
+	border-radius: 50%;
+	
+	 -webkit-animation: mymove 3s infinite; /* Safari 4.0 - 8.0 */
+  animation: bubble1Move 3s infinite;
+	}
+	
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes bubble1Move {
+  0%   {top: 0px;}
+  50%  {top: 5px;}
+  100%  {top: 0px}
+}
+
+/* Standard syntax */
+@keyframes bubble1Move {
+  0%   {top: 0px;}
+  50%  {top: 5px;}
+  100%  {top: 0px}
+}
+    
+    .bubble1::before {
+		content: "";
+		position: absolute;
+		top: 4em;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		border-radius: 50%;
+				-moz-box-shadow: -8px -8px 5px -8px white inset, -4px 6px 8px -6px white inset, 
+		3px 0px 10px 0px white inset,
+		-8px 9px 10px -10px white inset,
+		12px 12px 15px -13px white inset,
+		2px 15px 5px -9px #72BCD4 inset,
+		15px -5px 20px -10px #72BCD4 inset,
+		15px -5px 20px -7px white inset,
+		-8px -8px 10px -7px white inset,
+		0px 0px 40px -7px white;   
+		  -webkit-box-shadow: -8px -8px 5px -8px white inset, -4px 6px 8px -6px white inset, 
+		3px 0px 10px 0px white inset,
+		-8px 9px 10px -10px white inset,
+		12px 12px 15px -13px white inset,
+		2px 15px 5px -9px #72BCD4 inset,
+		15px -5px 20px -10px #72BCD4 inset,
+		15px -5px 20px -7px white inset,
+		-8px -8px 10px -7px white inset,
+		0px 0px 40px -7px white;   
+		
+		box-shadow: -8px -8px 5px -8px white inset, -4px 6px 8px -6px white inset, 
+		3px 0px 10px 0px white inset,
+		-8px 9px 10px -10px white inset,
+		12px 12px 15px -13px white inset,
+		2px 15px 5px -9px #72BCD4 inset,
+		15px -5px 20px -10px #72BCD4 inset,
+		15px -5px 20px -7px white inset,
+		-8px -8px 10px -7px white inset,
+		0px 0px 40px -7px white;   
+	  } 
+	   
+.bubble1 img {
+	border-radius: 50%;
+	} 
+
+.bubble2 {
+	position: relative;
+	max-width: 15%;
+	float: left;
+	border-radius: 50%;
+	margin: 1%;
+		 -webkit-animation: mymove 3s infinite; /* Safari 4.0 - 8.0 */
+  animation: bubble2Move 8s infinite;
+	}
+	
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes bubble2Move {
+  0%   {top: 0px;}
+  50%  {top: 35px;}
+  100%  {top: 0px}
+}
+
+/* Standard syntax */
+@keyframes bubble2Move {
+  0%   {top: 0px;}
+  50%  {top: 35px;}
+  100%  {top: 0px}
+}
+
+    
+    .bubble2::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		border-radius: 50%;
+			-moz-box-shadow: -8px 8px 5px -11px white inset, 10px 8px 5px -10px white inset, -3px -8px 5px -6px white inset, -10px 8px 25px -12px #72BCD4 inset, 15px -5px 20px -15px #72BCD4 inset, -3px -8px 40px -10px white inset, -10px 8px 25px -6px #72BCD4 inset, 0px 0px 10px 2px #71EAF3   inset, 15px -5px 20px -8px white inset, 0px 0px 40px -6px white;
+		  -webkit-box-shadow: -8px 8px 5px -11px white inset, 10px 8px 5px -10px white inset, -3px -8px 5px -6px white inset, -10px 8px 25px -12px #72BCD4 inset, 15px -5px 20px -15px #72BCD4 inset, -3px -8px 40px -10px white inset, -10px 8px 25px -6px #72BCD4 inset, 0px 0px 10px 2px #71EAF3   inset, 15px -5px 20px -8px white inset, 0px 0px 40px -6px white;
+		box-shadow: -8px 8px 5px -11px white inset, 10px 8px 5px -10px white inset, -3px -8px 5px -6px white inset, -10px 8px 25px -12px #72BCD4 inset, 15px -5px 20px -15px #72BCD4 inset, -3px -8px 40px -10px white inset, -10px 8px 25px -6px #72BCD4 inset, 0px 0px 10px 2px #71EAF3   inset, 15px -5px 20px -8px white inset, 0px 0px 40px -6px white;
+	   } 
+	   
+.bubble2 img {
+	border-radius: 50%;
+	} 
+
+
+.bubble3 {
+	position: relative;
+	max-width: 12%;
+	float: left;
+	border-radius: 50%;
+	margin: 0 2%;
+		 -webkit-animation: mymove 3s infinite; /* Safari 4.0 - 8.0 */
+  animation: bubble3Move 4s infinite;
+  
+  
+	}
+	
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes bubble3Move {
+  0%   {top: 0px;}
+  50%  {top: 15px;}
+  100%  {top: 0px}
+}
+
+/* Standard syntax */
+@keyframes bubble3Move {
+  0%   {top: 0px;}
+  50%  {top: 15px;}
+  100%  {top: 0px}
+}
+    
+    .bubble3::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		border-radius: 50%;
+		-moz-box-shadow: -8px 8px 5px -8px white inset, 15px 8px 5px -12px white inset, 
+		-3px -8px 5px -6px white inset,
+		10px 20px 15px -16px white inset,
+		-8px 8px 15px -7px white inset,
+		-8px 8px 15px -2px #72BCD4 inset,
+		15px -5px 20px -13px #72BCD4 inset,
+		15px -5px 20px -7px white inset,
+		-8px -8px 10px -7px white inset,
+		0px 0px 40px -6px white;
+		  -webkit-box-shadow: -8px 8px 5px -8px white inset, 
+		  15px 8px 5px -12px white inset, 
+		-3px -8px 5px -6px white inset,
+		10px 20px 15px -16px #72BCD4 inset,
+		-8px 8px 15px -7px white inset,
+		-8px 8px 15px -2px #72BCD4 inset,
+		15px -5px 20px -13px #72BCD4 inset,
+		15px -5px 20px -7px white inset,
+		-8px -8px 10px -7px white inset,
+		0px 0px 40px -6px white;
+		box-shadow: -8px 8px 5px -8px white inset, 15px 8px 5px -12px white inset, 
+		-3px -8px 5px -6px white inset,
+		10px 20px 15px -16px #72BCD4 inset,
+		-8px 8px 15px -7px white inset,
+		-8px 8px 15px -2px #72BCD4 inset,
+		15px -5px 20px -13px #72BCD4 inset,
+		15px -5px 20px -7px white inset,
+		-8px -8px 10px -7px white inset,
+		0px 0px 40px -6px white;
+	   } 
+	   
+.bubble3 img {
+	border-radius: 50%;
+	} 
+	
+.bubble5 {
+	position: relative;
+	max-width: 12%;
+	float: left;
+	border-radius: 50%;
+		 -webkit-animation: mymove 3s infinite; /* Safari 4.0 - 8.0 */
+  animation: bubble5Move 8s infinite;
+	}
+	
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes bubble5Move {
+  0%   {top: 0px;}
+  50%  {top: 20px;}
+  100%  {top: 0px}
+}
+
+/* Standard syntax */
+@keyframes bubble5Move {
+  0%   {top: 0px;}
+  50%  {top: 20px;}
+  100%  {top: 0px}
+}
+    
+    .bubble5::before {
+		content: "";
+		position: absolute;
+		top: 6em;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		border-radius: 50%;
+			-moz-box-shadow: -8px 8px 5px -8px white inset, 15px 8px 5px -12px white inset, 
+		-3px -8px 5px -6px white inset,
+		10px 20px 15px -16px #72BCD4 inset,
+		-8px 8px 15px -7px white inset,
+		-8px 8px 15px -2px #72BCD4 inset,
+		15px -5px 20px -13px #72BCD4 inset,
+		15px -5px 20px -7px white inset,
+		-8px -8px 10px -7px white inset,
+		0px 0px 40px -6px white;
+		  -webkit-box-shadow: -8px 8px 5px -8px white inset, 
+		  15px 8px 5px -12px white inset, 
+		-3px -8px 5px -6px white inset,
+		10px 20px 15px -16px #72BCD4 inset,
+		-8px 8px 15px -7px white inset,
+		-8px 8px 15px -2px #72BCD4 inset,
+		15px -5px 20px -13px #72BCD4 inset,
+		15px -5px 20px -7px white inset,
+		-8px -8px 10px -7px white inset,
+		0px 0px 40px -6px white;
+		
+		box-shadow: -8px -8px 5px -8px white inset, -4px 6px 8px -6px white inset, 
+		3px 0px 10px -2px white inset,
+		10px 20px 15px -17px white inset,
+		-8px 8px 10px -7px #72BCD4 inset,
+		-8px 8px 15px -6px white inset,
+		15px -5px 20px -13px #72BCD4 inset,
+		15px -5px 20px -7px white inset,
+		-8px -8px 10px -7px #72BCD4 inset,
+		0px 0px 40px -6px white;   
+	   } 
+	   
+.bubble5 img {
+	border-radius: 50%;
+	} 
+
+/*----------------------------------- Why people should hire me*/
+
+#resumeWork {
+	background-color: white;
+	color: black;
+	margin: 25% 2% 4% 2%;
+	padding: 2%;
+	width: 90.5%;
+}
+#resumeWork p, #resumeWork h6, #resumeWork h5, #resumeWork h3 {
+	color: black;
+}
+
+#resumeWork p {
+	margin-left: 15px;
+}
+
+
+#resume {
+	background-color: white;
+	color: black;
+	margin: 2% 2% 10% 2%;
+	padding: 2%;
+	width: 90.5%;
+}
+
+#resume p {
+	margin-left: 15px;
+}
+
+#downloadResume {
+	display: inline-block; 
+	margin-left: .5em;
+	position: relative;
+	text-decoration: none;
+}
+
+#IowaStateResume {
+	-webkit-column-count: 2; /* Chrome, Safari, Opera */
+  -moz-column-count: 2; /* Firefox */
+  column-count: 2;
+	column-gap: 5%;
+	margin-top: 1em;
+}
+
+.major {
+	font-weight:600;
+}
+
+/*----------------------------------- My ranking of skills*/
+#telescope {
+	position: relative;
+	z-index: 3;
+	margin: 0;
+}
+
+#swirl {
+	position: relative;
+	z-index: 3; 
+	margin: -.5em 0 1em 0;
+}
+
+#skills {
+	position: relative;
+	z-index: 5; 
+	background-color: #000d1a;
+	margin-top: -2em;
+}
+
+#skillsList {
+		-webkit-column-count: 3; /* Chrome, Safari, Opera */
+  -moz-column-count: 3; /* Firefox */
+  column-count: 3;
+  padding: 1em;
+  margin: 0 5%;
+  line-height: 1.6em;
+}
+
+.ratingFull {
+  unicode-bidi: bidi-override;
+  color: #FFD802;
+  border-radius: 10%;
+  display:inline-block;
+  position: relative; 
+  margin-left: 1%;
+}
+
+.ratingEmpty {
+  unicode-bidi: bidi-override;
+  color: #D3D3D3;
+  border-radius: 10%;
+  display:inline-block;
+  position: relative; 
+}
+
+
+#contactHeader {
+	margin-top: 10%;
+}
+
+.contactImages {
+	border-radius: 50%;
+	width: 50%;
+}
+
+.contactInfo {
+  display: inline-block;
+  width: 15%;
+  margin: 5% 2% 1% 2%;
+  
+}
+
+.contactInfo h5 {
+	margin-bottom: 15px;
+	font-size: 150%;
+}
+
+.contactInfo p {
+	margin-bottom: 20%;
+
+}
+.bottomNavLeft {
+	font-size: 150%;
+	position: relative;
+	margin-bottom: 1em;
+	margin-left: -1em;
+}
+
+.bottomNav {
+	font-size: 150%;
+	position: relative;
+    margin-bottom: 1em;
+	margin-left: 5em;
+}
+
+#modify {
+	margin-top: 1em;
+margin-bottom: 1em;
+font-size: 90%;
+}
+
+
