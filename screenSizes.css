@@ -1,37 +1,399 @@
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 779px) {
 ul {
-left: 1%;
+left: 5%;
+margin-top: 1em;
 }
 
 li a {
 font-size: 75%;
   }
   
+  
 h1 {
-font-size: 400%;
+font-size: 200%;
+margin-top: 15px;
   }
   
 h2 {
-font-size: 200%;
+font-size: 75%;
   }
   
 h3 {
+	font-size: 80%
   
   }
 
 h4 {
-  
+  font-size: 60%
   }
   
 h5 {
-  
+  font-size: 50%
   }
   
 h6 {
-  
+  font-size: 40%
   }
 
 p {
+  font-size: 40%
+  }
+  
+ .wave {
+	 margin-top: 2.5em;
+ }
+  
+  #face {
+	  padding: 4px;
+  }
+  
+  #hannah {
+	  border: solid 2px #FFD802;
+  }
+  
+  #shortFacts {
+	  padding: 1px;
+  }
+  
+  
+  #spaceman {
+	  margin-top: 1px;
+  }
+
+.bubble1 {
+	margin-top: -4.3em;
+}
+.bubble2 {
+	margin-top: -9px;
+}
+.bubble5 {
+	margin-top: -6em;
+}
+
+#downloadResume {
+	font-size: 35%;
+}
+
+#schoolProjects {
+	margin-top: 6em;
+}
+
+#skillsList {
+	padding: 0px;
+	margin: 0 0;
+	line-height: 14px;
+}
+
+.topLevelProjects {
+	font-size: 50%;
+}
+
+.btn {
+	padding: 2px 6px;
+	font-size: 25%;
+}
+
+.contactImages {
+	border-radius: 50%;
+	width: 50%;
+}
+
+.contactInfo {
+  display: inline-block;
+  width: 15%;
+  margin: 1% 1% 1% 1%; 
+}
+
+.websiteContainer {
+  padding-top: 80%;
+}
+
+#cybiteFinalLogo {
+	width: 31% !important;
+}
+
+#cowboy {
+	width: 21% !important;
+}
+
+#forest {
+	width: 27% !important;
+}
+
+#octopus {
+	width: 26% !important;
+}
+
+#plant {
+	width: 21% !important;
+}
+
+#selfie {
+	width: 22% !important;
+}
+
+#halloween1{
+	width: 22% !important;
+}
+
+.contactInfo h5 {
+	margin-bottom: 15px;
+	font-size: 60%;
+}
+
+.contactInfo p {
+	margin-bottom: 20%;
+
+}
+
+  .bottomNavLeft {
+	font-size: 50%;
+	margin-bottom: 1px;
+	margin-top: -5px;
+	margin-left: 10px;
+}
+
+.bottomNav {
+	font-size: 50%;
+    margin-bottom: 10px;
+	margin-left: 20px;
+	margin-top: -5px;
+}
+
+#modify {
+	margin-left: 8px;
+margin-bottom: 8px;
+font-size: 50%;
+}
+
+.content {
+	padding: 3px;
+}
+.row,
+.row > .column {
+  padding: 2px;
+}
+
+  #myBtn {
+  padding: 7px; /* Some padding */
+  font-size: 7px; /* Increase font size */
+  right: 10px
+}
+
+@media screen and (min-width: 324px) {
+	.websiteContainer {
+  padding-top: 70%;
+}
+}
+
+@media screen and (min-width: 362px) {
+	#cowboy {
+	width: 20% !important;
+}
+}
+
+@media screen and (min-width: 368px) {
+	.websiteContainer {
+  padding-top: 60%;
+}
+
+  .bottomNavLeft {
+	font-size: 60%;
+	margin-bottom: 1px;
+	margin-top: -5px;
+	margin-left: 10px;
+}
+
+.bottomNav {
+	font-size: 60%;
+    margin-bottom: 10px;
+	margin-left: 28px;
+	margin-top: -5px;
+}
+
+#modify {
+	margin-left: 8px;
+margin-bottom: 8px;
+font-size: 50%;
+}
+
+}
+
+@media screen and (min-width: 430px) {
+	.websiteContainer {
+  padding-top: 60%;
+	}
+  #myBtn {
+  padding: 10px; /* Some padding */
+  font-size: 10px; /* Increase font size */
+}
+  .bottomNavLeft {
+	font-size: 75%;
+	margin-bottom: 1px;
+	margin-top: -5px;
+	margin-left: 10px;
+}
+
+.bottomNav {
+	font-size: 75%;
+    margin-bottom: 10px;
+	margin-left: 25px;
+	margin-top: -5px;
+}
+
+#modify {
+	margin-left: 8px;
+margin-bottom: 8px;
+font-size: 50%;
+}
+
+}
+
+@media screen and (min-width: 488px) {
+ul {
+left: 15%;
+margin-top: 1em;
+}
+
+li a {
+font-size: 100%;
+  }
+  
+  
+h1 {
+font-size: 350%;
+margin-top: 15px;
+  }
+  
+h2 {
+font-size: 175%;
+  }
+  
+h3 {
+	font-size: 125%
   
   }
+
+h4 {
+  font-size: 90%
+  }
+  
+h5 {
+  font-size: 75%
+  }
+  
+h6 {
+  font-size: 50%
+  }
+
+p {
+  font-size: 55%
+  }
+  
+  #downloadResume {
+	font-size: 50%;
 }
+  
+  .topLevelProjects {
+	font-size: 90%;
+}
+
+.btn {
+	padding: 2px 2px;
+	font-size: 70%;
+}
+#circles {
+	width: 20.5% !important;
+}
+
+}
+
+
+@media screen and (min-width: 541px) {
+	.websiteContainer {
+  padding-top: 50%;
+}
+
+}
+
+@media screen and (min-width: 559px) {
+	.websiteContainer {
+  padding-top: 40%;
+}
+
+@media screen and (min-width: 559px) {
+	h1 {
+font-size: 450%;
+margin-top: 15px;
+  }
+	.websiteContainer {
+  padding-top: 40%;
+}
+
+ #hannah {
+	  border: solid 6px #FFD802;
+  }
+
+}
+
+@media screen and (min-width: 667px) {
+	h1 {
+font-size: 500%;
+margin-top: 15px;
+  }
+	.websiteContainer {
+  padding-top: 40%;
+}
+
+h2 {
+font-size: 225%;
+  }
+  
+h3 {
+	font-size: 150%
+  
+  }
+
+h4 {
+  font-size: 90%
+  }
+  
+h5 {
+  font-size: 75%
+  }
+  
+h6 {
+  font-size: 50%
+  }
+
+p {
+  font-size: 65%
+  }
+  
+    .bottomNavLeft {
+	font-size: 100%;
+	margin-bottom: 1px;
+	margin-top: -5px;
+	margin-left: 10px;
+}
+
+.bottomNav {
+	font-size: 100%;
+    margin-bottom: 10px;
+	margin-left: 25px;
+	margin-top: -5px;
+}
+
+#modify {
+	margin-left: 8px;
+margin-bottom: 8px;
+font-size: 75%;
+}
+  
+	.websiteContainerBand {
+  padding-top: 40%;
+}  
+}
+}
+
+
