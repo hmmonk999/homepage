@@ -1,601 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-<meta charset ="utf-8">
-<meta name="description" content="Best site ever">
-<title>Hannah Monk's Digital Portfolio</title>
-<link href="portfolio.css" type="text/css" rel="stylesheet"></link>
-<link rel="stylesheet" type="text/css" href="projects.css" >
-<link href="stars.css" type="text/css" rel="stylesheet"></link>
-<link href="screenSizes.css" type="text/css" rel="stylesheet"></link>
-<link href="https://fonts.googleapis.com/css?family=Bitter|Courgette|Raleway:400,600" rel="stylesheet">
-<link rel="shortcut icon" href="hmlogo.png" type="image/x-icon" style="border-radius: 50%"/>
-<script src="pickOne.js"></script>
-
-<!--<link href="portfolio.css" type="text/css" rel="stylesheet"></link>-->
-<meta name="viewport" content="width=device-width initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>3 Man Band</title>
+  <link rel="stylesheet" href="music.css">
 </head>
-
-
 <body>
 
-<div id = "stars"></div>
-<div id = "stars2"></div>
-<div id = "stars3"></div>
+<div id="instructions">
+<h1>Online 3-Man Band</h1>
+<h2>Instructions</h2>
+<p>To play each instrument, you must have a keyboard. 
+The white text is the corrsponding key on the key board that activates the sound of the instrament. The yellow text is the note each part of the instrament plays.
+<br>
+<br>
+To play the white keys on the piano, press the bottom row of lettered keys, z-m.
+<br>
+To play the black keys, press XXXX - s, f, g, j, or k.
+<br>
+To play the guitar strings, press the number keys 1-6.
 
-<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+</p>
+<p>*Sound effects come from <a href="https://freewavesamples.com/">Free Wave Samples</a>, <a href="https://archive.org/details/GuitarChord-A/1st_String_E.aiff">Internet Archive</a>, and <a href="https://samplefocus.com/samples/piano-c">Sample Focus</a>.</p>
+</div>
+
+<div class="piano">	
+	<div data-key="90" class="majorKey sound">
+      <kbd>Z</kbd>
+      <span class="note">A</span>
+    </div>
+			<div data-key="83" class="minorKey sound">
+			  <kbd>S</kbd>
+			  <span class="note">A#</span>
+			</div>
+	<div data-key="88" class="majorKey sound">
+      <kbd>X</kbd>
+      <span class="note">B</span>
+    </div>
+	<div data-key="67" class="majorKey sound">
+      <kbd>C</kbd>
+      <span class="note">C</span>
+    </div>
+			<div data-key="70" class="minorKey sound">
+			  <kbd>F</kbd>
+			  <span class="note">C#</span>
+			</div>
+	<div data-key="86" class="majorKey sound">
+      <kbd>V</kbd>
+      <span class="note">D</span>
+    </div>
+			<div data-key="71" class="minorKey sound">
+			  <kbd>G</kbd>
+			  <span class="note">D#</span>
+			</div>
+	<div data-key="66" class="majorKey sound">
+      <kbd>B</kbd>
+      <span class="note">E</span>
+    </div>
+	<div data-key="78" class="majorKey sound">
+      <kbd>N</kbd>
+      <span class="note">F</span>
+    </div>
+			<div data-key="74" class="minorKey sound">
+			  <kbd>J</kbd>
+			  <span class="note">F#</span>
+			</div>
+	<div data-key="77" class="majorKey sound">
+      <kbd>M</kbd>
+      <span class="note">G</span>
+    </div>
+			<div data-key="75" class="minorKey sound">
+			  <kbd>K</kbd>
+			  <span class="note">G#</span>
+			</div>
+	<div data-key="90" class="majorKey sound">
+      <kbd>Z</kbd>
+      <span class="note">A</span>
+    </div>
+</div> 
+
+<div class="guitar">
+<svg class="guitarHead" width="200" height="550" viewBox="0 0 270 410" style="position: fixed; z-index: 0;">
+<path d="M 209 403 Q 200 311 267 297 Q 209 243 247 93 Q 151 92 149 69 Q 143 92 50 98 Q 99 246 35 301 Q 99 314 93 403 Z" 
+stroke="black" stroke-width="5" fill="#800000"/>
+
+<path id="lineAB" d="M 91 395 211 395" stroke="#FFF8DC" stroke-width="12" fill="none" />
+
+<circle cx="110" cy="150" r="20" stroke="black" stroke-width="3" fill="#FFF8DC" />
+	<circle cx="110" cy="150" r="12" stroke="black" stroke-width="3" fill="none" />
+<circle cx="104" cy="210" r="20" stroke="black" stroke-width="3" fill="#FFF8DC" />
+	<circle cx="104" cy="210" r="12" stroke="black" stroke-width="3" fill="none" />
+<circle cx="92" cy="270" r="20" stroke="black" stroke-width="3" fill="#FFF8DC" />
+	<circle cx="92" cy="270" r="12" stroke="black" stroke-width="3" fill="none" />
+	
+<circle cx="190" cy="150" r="20" stroke="black" stroke-width="3" fill="#FFF8DC" />
+	<circle cx="190" cy="150" r="12" stroke="black" stroke-width="3" fill="none" />
+<circle cx="197" cy="210" r="20" stroke="black" stroke-width="3" fill="#FFF8DC" />
+	<circle cx="197" cy="210" r="12" stroke="black" stroke-width="3" fill="none" />
+<circle cx="207" cy="270" r="20" stroke="black" stroke-width="3" fill="#FFF8DC" />
+	<circle cx="207" cy="270" r="12" stroke="black" stroke-width="3" fill="none" />
+  Sorry, your browser does not support inline SVG.
+</svg>
+
+<svg role="img" width="550" height="600" viewbox="0 0 550 600" class="guitarBody">
+<path d="M 389 185 C 380 232 557 125 488 277 Q 471 307 512 374 Q 565 462 482 557 Q 362 616 251 554 Q 171 466 215 377 Q 253 305 236 279 Q 178 181 249 153 Q 286 140 322 149 L 356 167 Z" stroke="#FFF8DC" stroke-width="8" fill="#800000"/>
+</svg>
+
+	<div class="strings">
+	
+		<div data-key="49" class="string sound">
+		  <kbd>1</kbd>
+		</div>
+		<div data-key="50" class="string sound" style="margin-top: -1.5em; height: 27.5em;">
+		  <kbd>2</kbd>
+		</div>
+		<div data-key="51" class="string sound" style="margin-top: -3em; height: 29em;">
+		  <kbd>3</kbd>
+		</div>
+		<div data-key="52" class="string sound" style="margin-top: -3em; height: 29em;">
+		  <kbd>4</kbd>
+		</div>
+		<div data-key="53" class="string sound" style="margin-top: -1.5em; height: 27.5em;">
+		  <kbd>5</kbd>
+		</div>
+		<div data-key="54" class="string sound">
+		  <kbd>6</kbd>
+		</div>
+	</div>
+	<div id="neck"></div>
+	<div id="hole"></div>
+	<div id="circle"></div>
+	<div id="ciricle2"></div>
+	<div id="rect"></div>
+</div>
+   
+<div class="drums">	
+	<div data-key="57" class="symbol sound">
+      <kbd>9</kbd>
+      <span class="note">symbol</span>
+    </div>
+	<div data-key="73" class="snare sound">
+      <kbd>I</kbd>
+      <span class="note">snare</span>
+    </div>
+	<div data-key="79" class="snare sound" style="margin:-3em -3.5em 0em 0;">
+      <kbd>O</kbd>
+      <span class="note">snare</span>
+    </div>
+	<div data-key="76" class="drum sound">
+      <kbd>L</kbd>
+      <span class="note">Bass Drum</span>
+    </div>
+	<div data-key="80" class="snare sound" style="margin:-3em 0 1em -3.5em;">
+      <kbd>P</kbd>
+      <span class="note">snare</span>
+    </div>
+	<div data-key="219" class="snare sound">
+      <kbd>[</kbd>
+      <span class="note">snare</span>
+    </div>
+	
+	<div data-key="48" class="symbol sound">
+      <kbd>0</kbd>
+      <span class="note">symbol</span>
+    </div>
+  </div> 
+
+  <audio data-key="49" src="chords/1stString.mp3"></audio>
+  <audio data-key="50" src="chords/2ndString.mp3"></audio>
+  <audio data-key="51" src="chords/3rdString.mp3"></audio>
+  <audio data-key="52" src="chords/4thString.mp3"></audio>
+  <audio data-key="53" src="chords/5thString.mp3"></audio>
+  <audio data-key="54" src="chords/6thString.mp3"></audio>
+  
+  <audio data-key="57" src="chords/Symbol.wav"></audio>
+  <audio data-key="48" src="chords/ClosedSymbol.wav"></audio>
+  
+  <audio data-key="73" src="chords/Snare3.wav"></audio>
+  <audio data-key="79" src="chords/Snare1.wav"></audio>
+  <audio data-key="80" src="chords/Snare2.wav"></audio>
+  <audio data-key="219" src="chords/Snare4.wav"></audio>
+  <audio data-key="76" src="chords/BassDrum2.wav"></audio>
+  
+  <audio data-key="90" src="chords/PianoA.wav"></audio>
+  <audio data-key="88" src="chords/PianoB.wav"></audio>
+  <audio data-key="67" src="chords/PianoC.wav"></audio>
+  <audio data-key="86" src="chords/PianoD.wav"></audio>
+  <audio data-key="66" src="chords/PianoE.wav"></audio>
+  <audio data-key="78" src="chords/PianoF.wav"></audio>
+  <audio data-key="77" src="chords/PianoG.wav"></audio>
+  
+  <audio data-key="83" src="chords/PianoAsharp.wav"></audio>
+  <audio data-key="70" src="chords/PianoCsharp.wav"></audio>
+  <audio data-key="71" src="chords/PianoDsharp.wav"></audio>
+  <audio data-key="74" src="chords/PianoFsharp.wav"></audio>
+  <audio data-key="75" src="chords/PianoGsharp.wav"></audio>
 
 <script>
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
-    document.getElementById("myBtn").style.display = "block";
-  } else {
-    document.getElementById("myBtn").style.display = "none";
+  function removeTransition(e) {
+    if (e.propertyName !== 'transform') return;
+    e.target.classList.remove('playing');
   }
-}
-
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-</script>                   
-
-<ul>
-  <li><a href="index.html" accesskey="1" class="home">Home</a></li>
-  <li><a href="index.html#allAboutMe" accesskey="2" class="about">AboutMe</a></li>
-  <li><a href="index.html#resumeWork" accesskey="3" class="res">Resume</a></li>
-  <li><a href="index.html#portfolioHeader" accesskey="4" class="port">Portfolio</a></li>
-  <li><a href="index.html#contactHeader" accesskey="5" class="cont">Contact</a></li>
-</ul>
-
-<center>
-<div class="wave"></div>
-</center>
-
-<h1>Hello!</h1>
-<h2>I'm Hannah Monk</h2>
-<h4 id="introWords">Creative. <span style="color:#fceb8f">Ambitious.</span> <span style="color: #FFD802">Innovative.</span></h4>
-
-
-<h4 id="thanks">Thank you for visiting my website.</h4>
-
-<div id="allAboutMe">
-<div id="allAboutMeRow">
-	<h3 id="aboutText">About Me</h3>
-	<div id ="bio">
-		<p>When I'm not studying or participating in school activities, I'm probably writing. Writing has been a passion of mine since the 6th grade when my teacher assigned a creative writing project. Since then I've gotten better at creative writing, as well as technical writing, and in the future I would like to publish my own digital, interactive children's books.  
-		</p>
-	</div>
-		<div id="face">
-			<img src="hannah.jpg" id="hannah" alt="Hannah leaning against a wall">
-		</div>
-	<div id="shortFacts">
-		<h4>From: </h4>
-			<p>A small town just outside Champaign, Illinois</p>
-			<p style="color: #ffc87a">(Go Illini!)</p>
-		<br>
-	<h4>Fun Fact: </h4>
-		<p>I played travel softball for 10 years. For 8 of those years, I traveled an hour away from home to get to practices. I was a catcher. One day I would like to coach.</p>	
-	</div>
-</div>
-	<div id="longFact">
-	<p>I am constantly trying to teach myself things. Two of my favorites subjects to research are NASA's discoveries about planets and the history of pirates. While those are my favorites to learn about, I try to teach myself things more relevant to my major too, like: user-experience research, programming langauages, WCAG Accessibility Standards, and more. Currently, I am teaching myself JavaScript and I am slowly building up my Japanese vocabulary (which is currently about a toddler's level of words). In the future, I would like to visit Tokyo. I love traveling. Learning about the history and culture of other places facinates me. I've been to 10 countries and 18/50 states and will continue to travel in the future.
-	<br>
-	<br>
-	<p>I'm an Iowa State student majoring in technical communication and minoring in digital media and music technology. I think my major fits me well because it allows me to study rhetoric and write a lot, while also allowing me the freedom to study more creative course, like music and design. I am thinking about continueing my studies and going to grad school for human computer interaction. 
-	</p>
-</div>
-	<img src="spaceman.png" alt="Astronaut blowing a small bubble with a picture of Hannah inside" id="spaceman"> 	
-		<span class="bubble1"><img src="hannahCatcher.JPG" alt="bubble with a picture of Hannah catching in softball" width="100%" height="auto" style="margin-top: 4em;"/></span>
-		<span class="bubble3"><img src="hannahAcropolis.JPG" alt="bubble with a picture of Hannah in front of the Acropolis in Greece" width="100%" height="auto" /></span>
-		<span class="bubble2"><img src="hannahBoat.JPG" alt="bubble with a picture of Hannah driving at boat at sunset" width="100%" height="auto" /></span>
-		<span class="bubble5"><img src="monkGirlsClimbing.jpg" alt="bubble with a picture of Hannah and her family wearing rock climbing gear" width="100%" height="auto" style="margin-top: 6em;"/></span>
-		<span class="bubble2"><img src="hannahLeepfrog.JPG" alt="bubble with a picture of Hannah and her intern co-workers at Leepfrog Technologies wearing their 'Best Intern Ever' shirts" width="100%" height="auto" /></span>
-</div>
-
-<div id="resumeWork">
-<span><h3 style="color: black; display: inline-block;">Work Experience</h3></span>
-<span><a href="resume.pdf" target="_blank" id="downloadResume"> ~ Download my offical resume</a></span>
-	<h5>Learning Community Peer Mentor ~ Iowa State University</h5>
-	  <h6>August 2018 ~ December 2018</h6>
-		<p>Planned and presented lectures on technical communication</p>
-		<p>Suggested edits on centent and design of student projects</p>
-	<h5>Client Services Intern ~ Leepfrog Technologies</h5>
-	  <h6>May 2018 ~ December 2018</h6>
-		<p>Wrote and esigned client-facing documents</p>
-		<p>Gathered and analyzed data on implementation process</p>
-		<p>Organized information architecture on part of Leepfrog's internal website</p>
-	<h5> Summer Conference Staff ~ Iowa State University</h5>
-	  <h6>May 2017 ~ August 2017</h6>
-		<p>Managed front desk of several residence halls</p>
-		<p>Connected with guests to answer questions</p>
-		<p>Handled up to $2,000 in cash everyday</p>
-		
-	<h4 style="color: black;">Projects</h4>
-	  
-		<h5 style="color: black;">Designed Logo for App</h5>
-		  <h6>December 2018</h6>
-			<p>Designed logo for food app called CyBite</p>
-			<p>Prepared 3 mock-up logos prior to the final</p>
-</div>
-
-<div id="resume">
-<span><h3 style="color: black;">Education</h3></span>
-<h4 style="color: black;">Iowa State University</h4>
-	<p style="color: black;">
-		<span class="major">Major:</span> Technical Communication
-		<span class="major" style="margin-left: 2%;">GPA:</span> 3.58
-		<span class="major" style="margin-left: 2%;">Expected Graduation:</span> May 2020
-	</p>
-	<p style="color: black;"><span class="major">Minor:</span> Digital Media</p>
-	<p><span class="major">Minor:</span><span style="color: black"> Music Technology</span></p>
-
-<div id="IowaStateResume">
-	<h4 style="color: black;">Activites</h4>
-		<h5 style="color: black;">President for Society for Technical Communication</h5>
-		  <h6>December 2018 ~ Present</h6>
-			<p style="color: black;">Run meetings and maintain contact with members</p>
-			<p style="color: black;">Decide on beneficial technical communication events</p>
-			<p style="color: black;">Educate prospective and undecided students about the major</p>
-			
-		<h5 style="color: black;">Out-Reach Chair for Web Development Club</h5>
-		  <h6>November 2018 ~ Present</h6>	
-			<p style="color: black;">Find web development events to present at</p>
-			<p style="color: black;">Establish contact between event planners and the club</p>
-			<p style="color: black;">Design targeted ads to recruit students for the club</p>
-			<p style="color: black;">Encourage teamwork and communication between teammates for semester long project</p>
-		
-		<h5 style="color: black;">Copy Editor for Veritas</h5>
-		  <h6>August 2017 ~ May 2018</h6>
-			<p style="color: black;">Edited 20 pieces for Veritas, a political magazine</p>
-			<p style="color: black;">Informed and recruited students for the magazine</p>
-		
-		
-	<h4 id="schoolProjects" style="color: black;">Projects</h4>
-		<h5 style="color: black;">Media Specialist for Mock Campaign</h5>
-		<h6 style="color: black;">August 2018 ~ December 2018 | Political Rhetoric</h6>
-			<p style="color: black;">Designed logo using Photoshop and Illustrator</p>
-			<p style="color: black;">Created palm card and 3 mail ads using InDesign</p>
-			<p style="color: black;">Built website using HTML, CSS, and JavaScript</p>
-			<p style="color: black;">Photographed "candidate" and edited photos</p>
-			<p style="color: black;">Analyzed current political media and design trends</p>
-		
-		<h5 style="color: black;">Published 2 papers to a Student Journal</h5>
-		  <h6 style="color: black;">August 2018 ~ December 2018 | Technology Rhetoric</h6>
-			<p style="color: black;">Researched and wrote a paper on User Experience and another on combining technology and children's literature</p>
-			
-		<h5 style="color: black;">Web Designer for a Client</h5>
-		  <h6 style="color: black;">November 2017 ~ December 2017 | Web Design</h6>
-			<p style="color: black;">Built website based on client's wants and user's needs</p>
-			<p style="color: black;">Designed photography logo using Adobe Illustrator</p>
-			<br><br><br>
-	</div>
-</div>
-
-<img src="telescope.png" id="telescope" style="width: 100%;" alt="Hannah stearing a boat away from a sunset">
-
-<div id="skills">
-<h3>Skills</h3>
-	<div id="skillsList">
-		<h5>Writing</h5>
-			<p>Technical Writing <span class="ratingFull">🟊🟊🟊🟊</span><span class="ratingEmpty">🟊</span></p>
-			<p>Creative Writing <span class="ratingFull">🟊🟊🟊🟊🟊</span></p>
-			<p>Editing <span class="ratingFull">🟊🟊🟊🟊</span><span class="ratingEmpty">🟊</span></p>
-			<p>Document Design <span class="ratingFull">🟊🟊🟊🟊🟊</span></p>
-		<br>	
-		<h5>Music</h5>
-			<p>Adobe Audition<span class="ratingFull">🟊🟊🟊</span><span class="ratingEmpty">🟊🟊</span></p>
-			<p>Avid Pro Tools<span class="ratingFull">🟊🟊🟊</span><span class="ratingEmpty">🟊🟊</span></p>
-		<h5>Design</h5>
-			<p>Drawing <span class="ratingFull">🟊🟊🟊🟊</span><span class="ratingEmpty">🟊</span></p>
-			<p>Photography <span class="ratingFull">🟊🟊🟊</span><span class="ratingEmpty">🟊🟊</span></p>
-			<p>Adobe Photoshop <span class="ratingFull">🟊🟊🟊🟊</span><span class="ratingEmpty">🟊</span></p>
-			<p>Adobe Illustrator <span class="ratingFull">🟊🟊🟊🟊🟊</span></p>
-			<p>Adobe Indesign <span class="ratingFull">🟊🟊🟊🟊🟊</span></p>
-			<p>Adobe Premier <span class="ratingFull">🟊🟊🟊</span><span class="ratingEmpty">🟊🟊</span></p>
-			<p>Adobe After Effects<span class="ratingFull">🟊🟊🟊</span><span class="ratingEmpty">🟊🟊</span></p>
-			<p>SketchUp<span class="ratingFull">🟊🟊🟊</span><span class="ratingEmpty">🟊🟊</span></p>
-		<br>
-		<h5>Development</h5>
-			<p>HTML<span class="ratingFull">🟊🟊🟊🟊🟊</span></p>
-			<p>CSS<span class="ratingFull">🟊🟊🟊🟊</span><span class="ratingEmpty">🟊</span></p>
-			<p>JavaScript<span class="ratingFull">🟊🟊</span><span class="ratingEmpty">🟊🟊🟊</span></p>
-			<p>Java<span class="ratingFull">🟊🟊</span><span class="ratingEmpty">🟊🟊🟊</span></p>
-			<p>Python<span class="ratingFull">🟊</span><span class="ratingEmpty">🟊🟊🟊🟊</span></p>
-			<p>Visual Basic<span class="ratingFull">🟊🟊🟊</span><span class="ratingEmpty">🟊🟊</span></p>
-		<br>
-		</div>
-	</div>
-	
-	<img src="swirl.png" id="swirl" style="width: 100%;" alt="Hannah stearing a boat away from a sunset">
-	
-<!-- Start of Portfolio ------------------------------------------------------------------------------------------------------->	
-<h2 id="portfolioHeader">PORTFOLIO</h2>
-
-<span id="top">
-<a onclick="toggle_visibility('projectToggle');" class="topLevelProjects activeHightlight">All Projects</a>
-</span>
-
-<span id="top">
-<a onclick="toggle_visibility('projectToggle2');" class="topLevelProjects">Class Projects</a>
-</span>
-
-<span id="top">
-<a onclick="toggle_visibility('projectToggle3');" class="topLevelProjects">Outside Projects</a>
-</span>
-
-<span id="top">
-<a onclick="toggle_visibility('projectToggle4');" class="topLevelProjects">Dates</a>
-</span>
-
-
-
-    <div id="projectToggle" style="display:none;" class="projectTypeTopLevel">
-		<div id="myBtnContainer">
-        	<button class="btn active" onclick="filterSelection('all')">All Projects</button>
-			<button class="btn" onclick="filterSelection('writing')">Writing Samples</button>
-			<button class="btn" onclick="filterSelection('web')">Websites</button>
-			<button class="btn" onclick="filterSelection('digital')">Digital Design</button>
-			<button class="btn" onclick="filterSelection('traditional')">Tradition Art</button>
-			<button class="btn" onclick="filterSelection('videos')">Videos</button>
-		</div>
-   </div>
-
-	
-	<div id="projectToggle2" style="display:none;" class="projectTypeTopLevel">
-		<div id="myBtnContainer2">
-		  <button class="btn active" onclick="filterSelection('all')">All Projects</button>
-		  <button class="btn" onclick="filterSelection('political')">Political Rhetoric</button>
-		  <button class="btn" onclick="filterSelection('tech')">Technology Rhetoric</button>
-		  <button class="btn" onclick="filterSelection('DSN232')">Digital Design</button>
-		  <button class="btn" onclick="filterSelection('artis')">Digital Studio</button>
-		  <button class="btn" onclick="filterSelection('drawing')">Drawing 1 & 2</button>
-		  <button class="btn" onclick="filterSelection('webDesign')">Web Design</button>
-		</div>
-	</div>
-
-	
-	<div id="projectToggle3" style="display:none;" class="projectTypeTopLevel">
-		<div id="myBtnContainer3">
-        	<button class="btn active" onclick="filterSelection('all')">All Projects</button>
-			<button class="btn" onclick="filterSelection('personal')">Personal</button>
-			<button class="btn" onclick="filterSelection('others')">For Others</button>
-		</div>
-	</div>
-	
-	<div id="projectToggle4" style="display:none;" class="projectTypeTopLevel">
-		<div id="myBtnContainer4">
-          <button class="btn active" onclick="filterSelection('all')">All Projects</button>
-		  <button class="btn" onclick="filterSelection('s19')">Spring 2019</button>
-		  <button class="btn" onclick="filterSelection('f18')">Fall 2018</button>
-		  <button class="btn" onclick="filterSelection('s18')">Spring 2018</button>
-		  <button class="btn" onclick="filterSelection('f17')">Fall 2017</button>
-		  <button class="btn" onclick="filterSelection('s16')">Spring 2016</button>
-		</div>
-    </div>
-
-<script>
-function toggle_visibility(id) {
-    var e = document.getElementById(id);
-    var myClasses = document.querySelectorAll('.projectTypeTopLevel'),
-    i = 0,
-    l = myClasses.length;
-
-for (i; i < l; i++) {
-    myClasses[i].style.display = 'none';
-	
-}
-    if (e.style.display == 'none') e.style.display = 'inline-block';
-}
+  function playnote(e) {
+    const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+    const key = document.querySelector(`div[data-key="${e.keyCode}"]`);
+    if (!audio) return;
+    key.classList.add('playing');
+    audio.currentTime = 0;
+    audio.play();
+  }
+  const strings = Array.from(document.querySelectorAll('.sound'));
+  strings.forEach(key => key.addEventListener('transitionend', removeTransition));
+  window.addEventListener('keydown', playnote);
 </script>
 
-<!---------------------------------------------------------------------------------------------------------------- Portfolio Gallery Grid -->
-<div class="row">
 
-  <div class="column writing tech f18" style="width: 31%">
-    <div class="content">
-		<h4>Technology and Children's Literature</h4>
-			<p><a href="TechnologyAndChildrensLit.pdf" target="_blank" id="downloadResume">PDF of Paper</a></p>
-			<div class="responsivePDF">
-			<iframe src="TechnologyAndChildrensLit.pdf" height="305" style="width: 100%"></iframe>
-			</div>
-    </div>
-  </div>
-  <div class="column writing tech f18" style="width: 31%">
-    <div class="content">
-		<h4>User Experience and Paradigm Shifts</h4>
-			<p><a href="UXandParadigmShift.pdf" target="_blank" id="downloadResume">PDF of Paper</a></p>
-			<div class="responsivePDF">
-			<iframe src="UXandParadigmShift.pdf" height="305" style="width: 100%"></iframe>
-			</div>
-    </div>
-  </div>
-  <div class="column others writing f17" style="width: 31%">
-    <div class="content">
-		<h4>Article on the MeToo Movement</h4>
-			<p><a href="https://www.theodysseyonline.com/metoo-changing-the-narrative" target=_blank>Click here to read the Article</a></p>
-			<div class="responsivePDF">
-			<iframe src="meToo.pdf" height="305" style="width: 100%"></iframe>
-			</div>
-    </div>
-  </div>
-
-  <div class="column web political f18" style="width: 69%;">
-    <div class="content">
-		<h4><a href="https://hmmonk.public.iastate.edu/IanReed/" target=_blank>Website</a> for a Mock Campaign</h4>
-			<div class="websiteContainer">
-			<iframe src="https://hmmonk.public.iastate.edu/IanReed/" ></iframe>
-			</div>
-    </div>
-  </div>
-  
-  <div class="column digital political f18" style="width: 28%">
-  <div class="content">
-      <h4>Logo for Dr. Ian Reed</h4>
-		  <div style ="display: block; overflow: hidden;">
-		  <center><img src="IanReedLogo.jpg" alt="final design of the cybite logo" style="width:95%; position: relative; margin-top: 13px"></center>
-	  </div>
-	  <p>Attempt 2:</p>
-	  <br>
-	  <center>
-		  <img src="ReedLogo2.1.png" alt="a plate design draft for the CyBite logo" style="width:23%">
-		  <img src="ReedLogo2.2.png" alt="a location marker design draft for the CyBite logo" style="width:23%;">
-		  <img src="ReedLogo2.3.png" alt="a burger design draft for the CyBite logo" style="width:23%">
-		  <img src="ReedLogo2.4.png" alt="a plate design draft for the CyBite logo" style="width:23%">
-	  </center>
-	  <p>Attempt 1:</p>
-	  <br>
-	   <center>
-		  <img src="ReedLogo1.1.jpg" alt="a plate design draft for the CyBite logo" style="width:23%;  margin: 1% 0;">
-		  <img src="ReedLogo1.2.jpg" alt="a location marker design draft for the CyBite logo" style="width:23%;">
-		  <img src="ReedLogo1.3.jpg" alt="a plate design draft for the CyBite logo" style="width:23%;  margin: 1% 0;">
-		  <img src="ReedLogo1.4.jpg" alt="a plate design draft for the CyBite logo" style="width:23%;  margin: 1% 0;">
-		</center>
-  </div>
-  </div>
-  
-    <div class="column digital others f18" style="width: 28%">
-  <div class="content">
-      <h4>Logo for CyBite</h4>
-		  <div style ="display: block; overflow: hidden;">
-		  <p style="width:98%; position: relative;">CyBite is an app for locating free food on Iowa State's campus. I designed a logo for my friend who made the app.</p>
-		  <center><img src="cyBiteLogoShadow.png" alt="final design of the cybite logo" style="width:57.5%; position: relative;" id="cybiteFinalLogo"></center>
-	  </div>
-	  <center>
-		  <img src="cyBiteDraft2.png" alt="a plate design draft for the CyBite logo" style="width:23%">
-		  <img src="cyBiteDraft1.png" alt="a location marker design draft for the CyBite logo" style="width:23%; margin: 0 3% 0 3%">
-		  <img src="cyBiteDraft3.png" alt="a burger design draft for the CyBite logo" style="width:23%">
-	  </center>
-  </div>
-  </div>
- 
-    <div class="column web personal s19" style="width: 48%;">
-    <div class="content">
-		<h4>Digital Band Website</h4>
-			<div class="websiteContainerBand" style="">
-			<iframe src="https://hmmonk.public.iastate.edu/" style="width: 100%;"></iframe>
-			</div>
-      <p>Note: This project is a currernt project. It is not finished yet.</p>
-    </div>
-  </div>
-  
-  <div class="column digital DSN232 s18" style="width: 18.1%">
-    <div class="content">
-      <img src="hedgehogFight.png" alt="photography website" style="width:100%">
-      <h4>Hedgehog Battle</h4>
-      <p>made with Photoshop</p>
-    </div>
-  </div>
- <div class="column digital DSN232 s18">
-    <div class="content">
-      <img src="spaceFight.png" alt="photography website" style="width:100%">
-      <h4>Fight in Space</h4>
-      <p>made with Photoshop</p>
-    </div>
-  </div>
-    <div class="column digital DSN232 s18"  style="width: 23.7%">
-    <div class="content">
-      <img src="fishFight.png" alt="Ian Reed Website" style="width:100%">
-      <h4>Andy Warhol Style Fish Fight</h4>
-      <p>made with Photoshop</p>
-    </div>
-  </div>
-  
-   <div class="column digital artis s19" id="cowboy" style="width: 17.4%">
-    <div class="content">
-      <img src="cowboyNew.png" alt="photography website" style="width:100%">
-      <h4>Cowboy</h4>
-      <p>Photoshop Color Restoration</p>
-    </div>
-  </div>
-    <div class="column digital artis s19" id="forest" style="width: 23.4%">
-    <div class="content">
-      <img src="forestMagic.jpg" alt="photography website" style="width:100%">
-	  <img src="forestDark.jpg" alt="photography website" style="width:100%">
-      <h4>Magic Forest</h4>
-      <p>Photoshop Color Manipulation</p>
-    </div>
-  </div>
-
-     <div class="column digital DSN232 s18" id="octopus" style="width: 24.3%"">
-    <div class="content">
-      <img src="octopus.png" alt="photography website" style="width:100%">
-      <h4>Octopus</h4>
-      <p>made in Illustrator</p>
-    </div>
-  </div>
-     <div class="column digital  DSN232 s18" id="campfire" style="width: 21%">
-    <div class="content">
-      <center><img src="campfire.png" alt="photography website" style="width:86%"></center>
-      <h4>Piet Mondrian Campfire</h4>
-      <p>made in Illustrator</p>
-    </div>
-  </div>
-       <div class="column digital DSN232 s18" id="plant" style="width: 20.5%">
-    <div class="content">
-      <img src="plant.png" alt="photography website" style="width:100%">
-      <h4>Potted Plant</h4>
-      <p>made in Illustrator</p>
-    </div>
-  </div>
-    <div class="column digital personal s19" id="selfie" style="width: 20%">
-    <div class="content">
-      <img src="selfie.png" alt="photography website" style="width:100%">
-      <h4>A Selfie</h4>
-	  <p>made in Illustrator</p>
-    </div>
-  </div>
-  
-  
-    <div class="column traditional drawing f18" style="width: 29%">
-    <div class="content">
-      <img src="halloweenDrawing2.jpg" alt="photography website" style="width:100%">
-      <h4>Halloween Still Life</h4>
-	  <p>made with Charcoal</p>
-    </div>
-  </div>
-      <div class="column traditional drawing f17" style="width: 22.8%">
-    <div class="content">
-      <img src="penDrawing.JPG" alt="photography website" style="width:100%">
-      <h4>Egg Still Life</h4>
-	  <p>made with Micron Pen</p>
-    </div>
-  </div>
-  <div class="column traditional drawing f17" style="width: 16%">
-    <div class="content">
-      <center><img src="foxDrawing.JPG" alt="photography website" style="width:100%"></center>
-      <h4>Perspective Drawing</h4>
-	  <p>made with Copic Markers<p>
-    </div>
-  </div> 
-   <div class="column traditional drawing f17" id="halloween1" style="width: 18.2%">
-    <div class="content">
-      <img src="halloweenDrawing.JPG" alt="photography website" style="width:100%">
-      <h4>Halloween Still Life</h4>
-	  <p>made with pencil</p>
-    </div>
-  </div> 
-  <div class="column traditional drawing f17" style="width: 17.1%">
-    <div class="content">
-      <img src="frog.jpg" alt="photography website" style="width:100%">
-      <h4>Frog</h4>
-	  <p>made with colored pencils</p>
-    </div>
-  </div>
-<div class="column traditional drawing s16" style="width: 14.6%">
-    <div class="content">
-      <img src="302010Big.JPG" alt="photography website" style="width:100%">
-      <h4>Flowers</h4>
-	  <p>made with Micron Pen</p>
-    </div>
-  </div> 
-  <div class="column traditional drawing f17" style="width: 14.4%">
-    <div class="content">
-      <img src="wave.JPG" alt="photography website" style="width:100%">
-      <h4>The Wave</h4>
-	  <p>made with colored pencils</p>
-    </div>
-  </div> 
-   <div class="column traditional drawing f17" id="circles"style="width: 18.8%">
-    <div class="content">
-      <img src="ellipiticleDrawing.jpg" alt="photography website" style="width:100%">
-      <h4>Ellipiticles</h4>
-    </div>
-  </div>  
-      <div class="column traditional personal f18" style="width: 30.2%">
-    <div class="content">
-      <img src="boats.jpg" alt="photography website" style="width:100%">
-      <h4>Wooden Boats</h4>
-	  <p>made with pastels</p>
-    </div>
-  </div>
-    <div class="column traditional drawing f18" style="width: 37%">
-    <div class="content">
-      <img src="crossContour.jpg" alt="photography website" style="width:100%">
-      <h4>Cross Contour</h4>
-	  <p>made with pencil</p>
-    </div>
-  </div>
-  
-
-  <div class="column videos political f18" style="width: 30%;">
-    <div class="content">
-		<h4>TV AD for Mock Campaign</h4>
-			<div class="youtubeVideos">
-				<iframe class="youtubeVideos" src="https://www.youtube.com/embed/GqvX4XGRvyU" allowfullscreen></iframe>
-		</div>
-  </div>
-  </div>
-  <div class="column videos s17" style="width: 30%;">
-    <div class="content">
-		<h4>Changing to Gender Neutral Words</h4>
-		<div class="youtubeVideos">
-		<iframe class="youtubeVideos" src="https://www.youtube.com/embed/waGIvIgmhjg"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		</div>
-    </div>
-  </div>
-  <div class="column videos drawing s16" style="width: 30%;">
-    <div class="content">
-		<h4>Interactive Model Group Project</h4>
-		<div class="youtubeVideos">
-		<iframe class="youtubeVideos" src="https://www.youtube.com/embed/P3BY0vj-iLI"   allowfullscreen></iframe>
-		</div>
-    </div>
-
-
-  </div>
- </div>
- </div> 
- <script src="pickOne.js"></script> 
-  
-<!----------------------------------------------------------------------------------------------------------------------------- END GRID -->
-
-<h2 id="contactHeader">Contact</h2>
-<center>
-<span class="contactInfo">
-	<img src="mail.png"  alt="silloute of an iphone" class="contactImages">
-	<h5>EMAIL</h5>
-	<p><a href="mailto:hmmonk@iastate.edu?Subject=Hello%20again" target="_top">hmmonk@iastate.edu</a></p>
-</span>
-
-<span class="contactInfo">
-	<img src="phone.png"  alt="silloute of an iphone" class="contactImages">
-	<h5>PHONE</h5>
-	<p>(217) 979-9551</p>
-</span>
-
-<span class="contactInfo">
-	<img src="linkedin.png"  alt="silloute of an iphone" class="contactImages">
-	<h5>LINKEDIN</h5>
-	<p><a href="https://www.linkedin.com/in/hannah-monk-0323b8142/" target=_blank>Connect With Me</a></p>
-</span>
-
-<!--
-<span class="contactInfo">
-	<img src="youtube.png"  alt="silloute of an iphone" class="contactImages">
-	<h5>YOUTUBE</h5>
-	<p><a href="https://www.youtube.com/channel/UC6FI_1rfUO1xU9VFGK6OybQ?view_as=subscriber" target=_blank>Watch My Videos</a></p>
-</span>
-</center>
--->
-
-<ul>
-  <li><a href="index.html" accesskey="1" class="bottomNavLeft">Home</a></li>
-  <li><a href="index.html#allAboutMe" class="bottomNav" accesskey="2">AboutMe</a></li>
-  <li><a href="index.html#resumeWork" class="bottomNav" accesskey="3">Resume</a></li>
-  <li><a href="index.html#portfolioHeader" class="bottomNav" accesskey="4">Portfolio</a></li>
-  <li><a href="index.html#contactHeader" class="bottomNav" accesskey="5">Contact</a></li>
-  <center><p id="modify">Last Modified: <span id="mod"></span></p></center>
-</ul>
-
-<script>
-  var x = document.lastModified;
-  document.getElementById("mod").innerHTML = x;
-</script>
-
-</div>
 </body>
 </html>
